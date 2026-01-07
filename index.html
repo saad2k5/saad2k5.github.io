@@ -1,74 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saad Waqas | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Saad Waqas | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav>
-    <div class="logo">Saad Waqas</div>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <nav>
+        <div class="logo">MSW</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
+    </nav>
 
-  <!-- Hero Section -->
-  <section id="home" class="section hero">
-    <div class="hero-content">
-      <h1 id="hero-title"></h1>
-      <p id="hero-subtitle"></p>
-      <a href="#contact" class="btn">Get in Touch</a>
-    </div>
-  </section>
+    <header id="hero">
+        <div class="hero-content" data-aos="zoom-in">
+            <img src="me.jpg" alt="Muhammad Saad Waqas" class="profile-img">
+            <h1>Muhammad <span>Saad Waqas</span></h1>
+            <p>Electrical Engineering Student at FAST-NU [cite: 9]</p>
+            <div class="btns">
+                <a href="https://www.linkedin.com/in/muhammad-saad-waqas-91210a331/" target="_blank" class="btn">LinkedIn</a>
+                <a href="mailto:muhammad.saad2k5@gmail.com" class="btn outline">Contact Me</a>
+            </div>
+        </div>
+    </header>
 
-  <!-- About Section -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>I'm a web developer and tech enthusiast. I specialize in creating modern, responsive, and interactive websites. My goal is to deliver clean code and polished user experiences.</p>
-  </section>
+    <section id="about" data-aos="fade-up">
+        <h2>Summary</h2>
+        <p>Electrical Engineering undergraduate with a diverse skillset in robotics, electronics, and software development using C++ and Python[cite: 5]. I am a certified MS Office Specialist and Advanced C++ programmer[cite: 6].</p>
+    </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="section">
-    <h2>Skills</h2>
-    <div class="skills-container">
-      <div class="skill">
-        <h3>HTML</h3>
-        <div class="bar"><div class="progress" style="width: 90%;"></div></div>
-      </div>
-      <div class="skill">
-        <h3>CSS</h3>
-        <div class="bar"><div class="progress" style="width: 85%;"></div></div>
-      </div>
-      <div class="skill">
-        <h3>JavaScript</h3>
-        <div class="bar"><div class="progress" style="width: 80%;"></div></div>
-      </div>
-      <div class="skill">
-        <h3>React.js</h3>
-        <div class="bar"><div class="progress" style="width: 75%;"></div></div>
-      </div>
-    </div>
-  </section>
+    <section id="experience">
+        <h2 data-aos="fade-up">Professional Experience</h2>
+        <div class="card" data-aos="fade-right">
+            <h3>Teaching Assistant - FAST-NU [cite: 17]</h3>
+            <p class="date">08/2025 - 01/2026 [cite: 20]</p>
+            <ul>
+                <li>Assisted faculty with course management and grading[cite: 21].</li>
+                <li>Provided academic mentorship to junior students[cite: 22].</li>
+            </ul>
+        </div>
+        <div class="card" data-aos="fade-left">
+            <h3>C++ Intern - CodeAlpha [cite: 24, 25]</h3>
+            <p class="date">09/2025 - 10/2025 [cite: 26]</p>
+            <p>Focused on C++ software development and Object-Oriented Programming (OOP)[cite: 27, 28].</p>
+        </div>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Feel free to reach out via LinkedIn, GitHub, or email.</p>
-    <div class="contact-links">
-      <a href="https://www.linkedin.com/in/muhammad-saad-waqas-91210a331/" target="_blank">LinkedIn</a>
-      <a href="https://github.com/saad2k5" target="_blank">GitHub</a>
-      <a href="mailto:your.email@example.com">Email</a>
-    </div>
-  </section>
+    <section id="skills" data-aos="fade-up">
+        <h2>Skills & Certifications</h2>
+        <div class="skill-grid">
+            <div class="skill">C++ & Python [cite: 37]</div>
+            <div class="skill">Robotics [cite: 37]</div>
+            <li>C++ Advanced Programming - Udemy [cite: 39]</li>
+            <li>MS Word 2019 Specialist [cite: 42]</li>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
+    <footer>
+        <p>© 2026 Muhammad Saad Waqas | 0343 4804212 [cite: 3]</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
 </body>
 </html>
