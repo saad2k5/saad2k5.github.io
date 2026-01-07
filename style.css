@@ -51,7 +51,7 @@ nav ul li a:hover {
   color: #0aff99;
 }
 
-/* Section Styling */
+/* Sections */
 .section {
   padding: 100px 50px;
   min-height: 100vh;
@@ -76,13 +76,15 @@ nav ul li a:hover {
   text-align: center;
 }
 
-.hero-content h1 span {
+.hero-content h1 {
+  font-size: 2.8rem;
   color: #58a6ff;
 }
 
 .hero-content p {
   margin-top: 15px;
   font-size: 18px;
+  color: #c9d1d9;
 }
 
 .btn {
