@@ -4,64 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muhammad Saad Waqas | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
 
-    <nav>
-        <div class="logo">MS<span>W</span></div>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-        </ul>
+    <div id="particles-js"></div> <nav>
+        <div class="logo">SAAD<span>.</span></div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="https://www.linkedin.com/in/muhammad-saad-waqas-91210a331/" target="_blank">LinkedIn</a>
+        </div>
     </nav>
 
-    <section id="hero">
-        <div class="hero-content" data-aos="zoom-out-up">
-            <div class="img-container">
-                <img src="profile.jpeg" alt="Saad Waqas" class="profile-img">
+    <section class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <div class="profile-wrapper">
+                <img src="profile.jpeg" alt="Saad Waqas" class="main-img">
             </div>
-            <h1>Muhammad <span class="highlight">Saad Waqas</span></h1>
-            <p class="subtitle">Electrical Engineering @ FAST-NU [cite: 9]</p>
-            <div class="hero-btns">
-                <a href="https://www.linkedin.com/in/muhammad-saad-waqas-91210a331/" class="btn-primary">LinkedIn Profile</a>
+            <h1>I am <span id="typed"></span></h1>
+            <p>Electrical Engineering Undergraduate at <strong>FAST-NU</strong> [cite: 9]</p>
+            <div class="hero-actions">
+                <a href="mailto:muhammad.saad2k5@gmail.com" class="btn-glow">Hire Me</a>
             </div>
         </div>
     </section>
 
     <section id="experience">
-        <h2 data-aos="fade-down">Professional Journey</h2>
-        
-        <div class="glass-card" data-aos="fade-right">
-            <h3>Teaching Assistant - FAST-NU [cite: 16, 17]</h3>
-            <span class="date">08/2025 - 01/2026 [cite: 20]</span>
-            <p>Mentored junior students and assisted faculty with course management[cite: 21, 22].</p>
-        </div>
-
-        <div class="glass-card" data-aos="fade-left">
-            <h3>C++ Intern - CodeAlpha </h3>
-            <span class="date">09/2025 - 10/2025 [cite: 26]</span>
-            <p>Developed optimized software solutions using Object-Oriented Programming (OOP)[cite: 28, 29].</p>
-        </div>
-    </section>
-
-    <section id="skills" data-aos="fade-up">
-        <h2>Technical Arsenal</h2>
-        <div class="skills-container">
-            <div class="skill-pill">C++ [cite: 37]</div>
-            <div class="skill-pill">Python [cite: 37]</div>
-            <div class="skill-pill">Robotics [cite: 37]</div>
-            <div class="skill-pill">Electronics [cite: 5]</div>
-            <div class="skill-pill">WordPress [cite: 37]</div>
+        <h2 class="section-title" data-aos="fade-down">My Journey</h2>
+        <div class="timeline">
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="content">
+                    <h3>C++ Intern</h3>
+                    <p class="company">CodeAlpha | 09/2025 - 10/2025 [cite: 24, 26]</p>
+                    <p>Focused on C++ software development and Object-Oriented Programming (OOP)[cite: 27, 28].</p>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="content">
+                    <h3>Teaching Assistant</h3>
+                    <p class="company">FAST-NU | 08/2025 - 01/2026 [cite: 16, 20]</p>
+                    <p>Assisted faculty with course management and mentored junior students[cite: 21, 22].</p>
+                </div>
+            </div>
         </div>
     </section>
 
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({ duration: 1000, once: false });
+        // Typing Animation
+        var typed = new Typed('#typed', {
+            strings: ['Muhammad Saad Waqas', 'a C++ Developer', 'a Robotics Enthusiast', 'an Engineer'],
+            typeSpeed: 60,
+            backSpeed: 40,
+            loop: true
+        });
+
+        // Initialize AOS
+        AOS.init({ duration: 1200 });
+
+        // Particles Background
+        particlesJS.load('particles-js', 'https://cdn.jsdelivr.net/gh/VincentGarreau/particles.js@master/demo/particles.json');
     </script>
 </body>
 </html>
