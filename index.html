@@ -4,71 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muhammad Saad Waqas | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <div id="particles-js"></div>
-
     <nav>
-        <div class="nav-container">
-            <div class="logo">SAAD<span>.</span></div>
-            <div class="nav-links">
-                <a href="#experience">Experience</a>
-                <a href="https://www.linkedin.com/in/muhammad-saad-waqas-91210a331/" target="_blank">LinkedIn</a>
+        <div class="nav-content">
+            <div class="logo">Muhammad Saad Waqas</div>
+            <div class="links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
     </nav>
 
-    <main class="wrapper">
-        <section class="hero">
-            <div class="hero-content" data-aos="zoom-in">
-                <div class="profile-frame">
-                    <img src="profile.jpeg" alt="Saad Waqas" class="main-img">
-                </div>
-                <h1>I am <span id="typed"></span></h1>
-                <p class="lead-text">Electrical Engineering @ <strong>FAST-NU</strong></p>
-                <div class="hero-actions">
-                    <a href="mailto:muhammad.saad2k5@gmail.com" class="btn-glow">Contact Me</a>
+    <header class="hero">
+        <div class="hero-inner" data-aos="zoom-in">
+            <h1><span id="typed"></span></h1>
+            <p class="hero-sub">Electrical Engineering Student | C++ Developer</p>
+            <p class="hero-desc">Building scalable systems and pixel-perfect interfaces.</p>
+            <div class="hero-btns">
+                <a href="#experience" class="btn-fill">View My Journey</a>
+                <a href="mailto:muhammad.saad2k5@gmail.com" class="btn-outline">Contact Me</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="container">
+        <div class="about-flex">
+            <div class="profile-side" data-aos="fade-right">
+                <div class="img-glow-ring">
+                    <img src="profile.jpeg" alt="Saad Waqas">
                 </div>
             </div>
-        </section>
-
-        <section id="experience">
-            <h2 class="section-title" data-aos="fade-up">Professional Journey</h2>
-            <div class="timeline">
-                <div class="timeline-item" data-aos="fade-up">
-                    <div class="content">
-                        <h3>Teaching Assistant</h3>
-                        <p class="company">FAST-NU | 08/2025 - 01/2026</p>
-                        <p>Mentored junior students and assisted faculty with course management[cite: 21, 22].</p>
-                    </div>
-                </div>
-                <div class="timeline-item" data-aos="fade-up">
-                    <div class="content">
-                        <h3>C++ Intern</h3>
-                        <p class="company">CodeAlpha | 09/2025 - 10/2025</p>
-                        <p>Developed optimized software solutions using Object-Oriented Programming (OOP)[cite: 27, 28].</p>
+            <div class="content-side" data-aos="fade-left">
+                <h2>About Me</h2>
+                [cite_start]<p>Electrical Engineering undergraduate at <strong>FAST-NU</strong> with a diverse skillset in robotics, electronics, and software development[cite: 5, 9]. [cite_start]Certified in Advanced C++ and MS Office[cite: 6].</p>
+                <div class="edu-list">
+                    <div class="edu-item">
+                        <span class="dot"></span>
+                        <strong>B.Sc. (EE) @ FAST-NUCES (2023–2027)</strong>
+                        [cite_start]<p>Focusing on Electronics and Power Systems[cite: 9, 11]. [cite_start]Teaching Assistant (08/2025-01/2026)[cite: 20].</p>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <section id="skills" class="container">
+        <h2 data-aos="fade-up">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card" data-aos="flip-up">
+                <h3><i class="fas fa-code"></i> Programming</h3>
+                <div class="bar-wrap">
+                    <div class="label">C++ <span>Advanced</span></div>
+                    <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+                </div>
+                <div class="bar-wrap">
+                    <div class="label">Python <span>Intermediate</span></div>
+                    <div class="bar"><div class="fill" style="width: 75%;"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h2>Let's Connect</h2>
+        <p>Ready to collaborate or just want to say hello?</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/muhammad-saad-waqas-91210a331/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:muhammad.saad2k5@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <a href="#" class="download-btn"><i class="fas fa-download"></i> Download Resume</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        var typed = new Typed('#typed', {
-            strings: ['Muhammad Saad Waqas', 'a C++ Developer', 'a Robotics Enthusiast', 'an Engineer'],
-            typeSpeed: 60,
-            backSpeed: 40,
-            loop: true
-        });
         AOS.init({ duration: 1000, once: true });
-        particlesJS.load('particles-js', 'https://cdn.jsdelivr.net/gh/VincentGarreau/particles.js@master/demo/particles.json');
+        new Typed('#typed', {
+            strings: ['Saad Waqas', 'a Developer', 'an Engineer'],
+            typeSpeed: 70, loop: true
+        });
     </script>
 </body>
 </html>
