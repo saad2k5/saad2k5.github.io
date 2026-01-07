@@ -1,1 +1,134 @@
+/* BASIC STYLING */
+body {
+  font-family: 'Courier New', monospace;
+  margin: 0;
+  padding: 0;
+  background-color: #0a0a0a;
+  color: #f5f5f5;
+  scroll-behavior: smooth;
+}
 
+header.header {
+  text-align: center;
+  padding: 50px 20px 30px 20px;
+  background-color: #111;
+}
+
+.profile-img {
+  width: 150px;
+  border-radius: 50%;
+  border: 3px solid #00ff00;
+  margin-bottom: 15px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+  color: #00ff00;
+}
+
+header p, header a {
+  color: #ccc;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+header a {
+  color: #00ff00;
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+/* NAVIGATION */
+nav.nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  background-color: #111;
+  padding: 12px 0;
+}
+
+nav.nav a {
+  color: #00ff00;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav.nav a:hover {
+  text-decoration: underline;
+  color: #66ff66;
+}
+
+/* SECTIONS */
+section {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+section h2 {
+  color: #00ff00;
+  margin-bottom: 15px;
+}
+
+/* SKILLS */
+.skills-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skills-list li {
+  margin-bottom: 8px;
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 5px;
+  transition: 0.3s;
+  border: 1px solid #00ff00;
+}
+
+.skills-list li:hover {
+  color: #0a0;
+  box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+  transform: translateY(-2px);
+}
+
+/* EXPERIENCE */
+.experience-list li {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-left: 3px solid #00ff00;
+  transition: 0.3s;
+}
+
+.experience-list li:hover {
+  background-color: #111;
+  box-shadow: 0 0 10px #00ff00;
+  transform: translateX(3px);
+}
+
+/* ANIMATIONS */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* TYPING EFFECT */
+.typing {
+  color: #00ff00;
+  font-weight: bold;
+  font-size: 18px;
+  min-height: 24px;
+}
