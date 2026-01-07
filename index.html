@@ -11,63 +11,63 @@
 </head>
 <body>
 
-    <div id="particles-js"></div> <nav>
-        <div class="logo">SAAD<span>.</span></div>
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="https://www.linkedin.com/in/muhammad-saad-waqas-91210a331/" target="_blank">LinkedIn</a>
+    <div id="particles-js"></div>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">SAAD<span>.</span></div>
+            <div class="nav-links">
+                <a href="#experience">Experience</a>
+                <a href="https://www.linkedin.com/in/muhammad-saad-waqas-91210a331/" target="_blank">LinkedIn</a>
+            </div>
         </div>
     </nav>
 
-    <section class="hero">
-        <div class="hero-content" data-aos="fade-up">
-            <div class="profile-wrapper">
-                <img src="profile.jpeg" alt="Saad Waqas" class="main-img">
+    <main class="wrapper">
+        <section class="hero">
+            <div class="hero-content" data-aos="zoom-in">
+                <div class="profile-frame">
+                    <img src="profile.jpeg" alt="Saad Waqas" class="main-img">
+                </div>
+                <h1>I am <span id="typed"></span></h1>
+                <p class="lead-text">Electrical Engineering @ <strong>FAST-NU</strong></p>
+                <div class="hero-actions">
+                    <a href="mailto:muhammad.saad2k5@gmail.com" class="btn-glow">Contact Me</a>
+                </div>
             </div>
-            <h1>I am <span id="typed"></span></h1>
-            <p>Electrical Engineering Undergraduate at <strong>FAST-NU</strong> [cite: 9]</p>
-            <div class="hero-actions">
-                <a href="mailto:muhammad.saad2k5@gmail.com" class="btn-glow">Hire Me</a>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="experience">
-        <h2 class="section-title" data-aos="fade-down">My Journey</h2>
-        <div class="timeline">
-            <div class="timeline-item" data-aos="fade-right">
-                <div class="content">
-                    <h3>C++ Intern</h3>
-                    <p class="company">CodeAlpha | 09/2025 - 10/2025 [cite: 24, 26]</p>
-                    <p>Focused on C++ software development and Object-Oriented Programming (OOP)[cite: 27, 28].</p>
+        <section id="experience">
+            <h2 class="section-title" data-aos="fade-up">Professional Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="content">
+                        <h3>Teaching Assistant</h3>
+                        <p class="company">FAST-NU | 08/2025 - 01/2026</p>
+                        <p>Mentored junior students and assisted faculty with course management[cite: 21, 22].</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="content">
+                        <h3>C++ Intern</h3>
+                        <p class="company">CodeAlpha | 09/2025 - 10/2025</p>
+                        <p>Developed optimized software solutions using Object-Oriented Programming (OOP)[cite: 27, 28].</p>
+                    </div>
                 </div>
             </div>
-            <div class="timeline-item" data-aos="fade-left">
-                <div class="content">
-                    <h3>Teaching Assistant</h3>
-                    <p class="company">FAST-NU | 08/2025 - 01/2026 [cite: 16, 20]</p>
-                    <p>Assisted faculty with course management and mentored junior students[cite: 21, 22].</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // Typing Animation
         var typed = new Typed('#typed', {
             strings: ['Muhammad Saad Waqas', 'a C++ Developer', 'a Robotics Enthusiast', 'an Engineer'],
             typeSpeed: 60,
             backSpeed: 40,
             loop: true
         });
-
-        // Initialize AOS
-        AOS.init({ duration: 1200 });
-
-        // Particles Background
+        AOS.init({ duration: 1000, once: true });
         particlesJS.load('particles-js', 'https://cdn.jsdelivr.net/gh/VincentGarreau/particles.js@master/demo/particles.json');
     </script>
 </body>
