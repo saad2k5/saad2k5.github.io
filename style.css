@@ -1,89 +1,77 @@
-* { 
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; /* This prevents the "out of bounds" issue */
+:root {
+    --bg: #000000;
+    --card-bg: #0a0a0a;
+    --accent: #ffffff;
+    --text-dim: #a1a1aa;
 }
 
 body {
-    background: #020617;
-    color: #f8fafc;
-    font-family: 'Poppins', sans-serif;
-    overflow-x: hidden; /* Stops horizontal scrolling */
+    background: var(--bg);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    line-height: 1.6;
 }
 
-#particles-js {
-    position: fixed;
+.container { max-width: 1100px; margin: 0 auto; padding: 80px 20px; }
+
+/* The Glowing Profile Image Effect */
+.img-glow-ring {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    padding: 5px;
+    background: linear-gradient(45deg, #444, #fff, #444);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-glow-ring img {
     width: 100%;
     height: 100%;
-    z-index: -1;
-}
-
-.wrapper {
-    max-width: 1200px; /* Constrains the width */
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-nav {
-    width: 100%;
-    padding: 20px 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    backdrop-filter: blur(10px);
-    z-index: 1000;
-}
-
-.nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.hero {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.main-img {
-    width: 200px;
-    height: 200px;
     border-radius: 50%;
-    border: 4px solid #38bdf8;
-    box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+    object-fit: cover;
+    border: 4px solid #000;
 }
 
-.btn-glow {
-    display: inline-block;
-    padding: 12px 35px;
-    background: #38bdf8;
-    color: #020617;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 25px;
-    transition: 0.3s ease;
-}
-
-.btn-glow:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(56, 189, 248, 0.5);
-}
-
-.timeline {
-    padding: 40px 0;
-}
-
-.timeline-item {
-    background: rgba(255, 255, 255, 0.05);
-    margin: 20px 0;
-    padding: 25px;
+/* Skill Progress Bars */
+.skill-card {
+    background: var(--card-bg);
+    border: 1px solid #222;
+    padding: 30px;
     border-radius: 15px;
-    border-left: 4px solid #38bdf8;
+}
+
+.bar {
+    height: 6px;
+    background: #222;
+    border-radius: 10px;
+    margin-top: 8px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    background: var(--accent);
+    box-shadow: 0 0 10px white;
+}
+
+.btn-fill {
+    background: white;
+    color: black;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.btn-outline {
+    border: 1px solid #444;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-left: 15px;
 }
