@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muhammad Saad Waqas | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <nav>
-        <div class="logo">MSW</div>
+        <div class="logo">MS<span>W</span></div>
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
@@ -19,55 +19,49 @@
         </ul>
     </nav>
 
-    <header id="hero">
-        <div class="hero-content" data-aos="zoom-in">
-            <img src="profile.jpeg" alt="Muhammad Saad Waqas" class="profile-img">
-            <h1>Muhammad <span>Saad Waqas</span></h1>
-            <p>Electrical Engineering Student at FAST-NU [cite: 9]</p>
-            <div class="btns">
-                <a href="https://www.linkedin.com/in/muhammad-saad-waqas-91210a331/" target="_blank" class="btn">LinkedIn</a>
-                <a href="mailto:muhammad.saad2k5@gmail.com" class="btn outline">Contact Me</a>
+    <section id="hero">
+        <div class="hero-content" data-aos="zoom-out-up">
+            <div class="img-container">
+                <img src="profile.jpeg" alt="Saad Waqas" class="profile-img">
+            </div>
+            <h1>Muhammad <span class="highlight">Saad Waqas</span></h1>
+            <p class="subtitle">Electrical Engineering @ FAST-NU [cite: 9]</p>
+            <div class="hero-btns">
+                <a href="https://www.linkedin.com/in/muhammad-saad-waqas-91210a331/" class="btn-primary">LinkedIn Profile</a>
             </div>
         </div>
-    </header>
-
-    <section id="about" data-aos="fade-up">
-        <h2>Summary</h2>
-        <p>Electrical Engineering undergraduate with a diverse skillset in robotics, electronics, and software development using C++ and Python[cite: 5]. I am a certified MS Office Specialist and Advanced C++ programmer[cite: 6].</p>
     </section>
 
     <section id="experience">
-        <h2 data-aos="fade-up">Professional Experience</h2>
-        <div class="card" data-aos="fade-right">
-            <h3>Teaching Assistant - FAST-NU [cite: 17]</h3>
-            <p class="date">08/2025 - 01/2026 [cite: 20]</p>
-            <ul>
-                <li>Assisted faculty with course management and grading[cite: 21].</li>
-                <li>Provided academic mentorship to junior students[cite: 22].</li>
-            </ul>
+        <h2 data-aos="fade-down">Professional Journey</h2>
+        
+        <div class="glass-card" data-aos="fade-right">
+            <h3>Teaching Assistant - FAST-NU [cite: 16, 17]</h3>
+            <span class="date">08/2025 - 01/2026 [cite: 20]</span>
+            <p>Mentored junior students and assisted faculty with course management[cite: 21, 22].</p>
         </div>
-        <div class="card" data-aos="fade-left">
-            <h3>C++ Intern - CodeAlpha [cite: 24, 25]</h3>
-            <p class="date">09/2025 - 10/2025 [cite: 26]</p>
-            <p>Focused on C++ software development and Object-Oriented Programming (OOP)[cite: 27, 28].</p>
+
+        <div class="glass-card" data-aos="fade-left">
+            <h3>C++ Intern - CodeAlpha </h3>
+            <span class="date">09/2025 - 10/2025 [cite: 26]</span>
+            <p>Developed optimized software solutions using Object-Oriented Programming (OOP)[cite: 28, 29].</p>
         </div>
     </section>
 
     <section id="skills" data-aos="fade-up">
-        <h2>Skills & Certifications</h2>
-        <div class="skill-grid">
-            <div class="skill">C++ & Python [cite: 37]</div>
-            <div class="skill">Robotics [cite: 37]</div>
-            <li>C++ Advanced Programming - Udemy [cite: 39]</li>
-            <li>MS Word 2019 Specialist [cite: 42]</li>
+        <h2>Technical Arsenal</h2>
+        <div class="skills-container">
+            <div class="skill-pill">C++ [cite: 37]</div>
+            <div class="skill-pill">Python [cite: 37]</div>
+            <div class="skill-pill">Robotics [cite: 37]</div>
+            <div class="skill-pill">Electronics [cite: 5]</div>
+            <div class="skill-pill">WordPress [cite: 37]</div>
         </div>
     </section>
 
-    <footer>
-        <p>© 2026 Muhammad Saad Waqas | 0343 4804212 [cite: 3]</p>
-    </footer>
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init({ duration: 1000, once: true });</script>
+    <script>
+        AOS.init({ duration: 1000, once: false });
+    </script>
 </body>
 </html>
